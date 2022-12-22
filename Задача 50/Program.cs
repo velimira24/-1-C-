@@ -6,34 +6,6 @@
 // 8 4 2 4
 // 17 -> такого числа в массиве нет
 
-//Задача 50. Напишите программу, которая на вход принимает позиции элемента в двумерном массиве, 
-// и возвращает значение этого элемента или же указание, что такого элемента нет.
-// Например, задан массив:
-// 1 4 7 2
-// 5 9 2 3
-// 8 4 2 4
-// 17 -> такого числа в массиве нет
-
-//  void FiiArray(int[,]col)
-// {
-// Random rand = new Random();
-// Console.WriteLine("Введите количество строк");
-// int n = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine("Введите количество столбцов");
-// int m = Convert.ToInt32(Console.ReadLine());
-// int[,] arr = new int[n, m];
-// Console.WriteLine("Исходный массив: ");
-// for (int i = 0; i < arr.GetLength(0); i++)
-// {
-//     for (int j = 0; j < arr.GetLength(1); j++)
-// {
-//     arr[i, j] = rand.Next(10, 99);
-// Console.Write("{0} ", arr[i, j]);
-// }
-// Console.WriteLine();
-// }
-// }
-
 void PrintArray(int[,] matr)
 {
  for (int i = 0; i < matr.GetLength(0); i++)
