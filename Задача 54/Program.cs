@@ -36,23 +36,26 @@ void PrintArray(int[,] array)
 void SorttoLawer(int[,]array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
-    
     {
-     for (int m = 0; m < array.GetLength(1) - 1; m++) 
-     {  
-    for (int j = 0; j < array.GetLength(1) - 1; j++)
+        for (int j = 0; j < array.GetLength(1)-1; j++)
     {
-        if (array[i,j] < array[i,j+1])
-        {int max = array[i,j+1];
-        array[i,j+1] = array[i,j];
-        array[i,j] = max;    
+        int minPosition = j;
+        for (int m = j+1; m < array.GetLength(1); m++)
+        {
+            if (array[i,m]< array[i,minPosition])
+           minPosition = m;
+            { 
+               
+        
+            }
+            
         }
+         int temp = array[i,j];
+        array[i,j] = array[i,minPosition];
+        array[i,minPosition] = temp;
+    }
         
     }
-    
-        
-    }
-}
 }
 
 int[,]arr = new int[3,4];
