@@ -7,19 +7,19 @@
 
 Console.Write("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
-int count = 1;
-NaturalToLow(number, count);
+int i = 1;
+ToLow(number, i);
 
 
-void NaturalToLow(int n, int count)
+void ToLow(int n, int i)
 {
-    if (count > n)
+    if (i > n)
     {
         return;
     }
     else
     {
-        NaturalToLow(n, count + 1);
-        Console.Write(count + " ");
+        ToLow(n, i + 1);
+        Console.Write(i + " ");
     }
 }
