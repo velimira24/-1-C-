@@ -26,7 +26,7 @@ for (int i = 0; i < array.Length; i++)
     array[i] = rand.Next(leftRange,rightRange+1);
     
 }
-return array;
-System.Console.WriteLine("[" + string.Join (", ", array) + "]");
 
+System.Console.WriteLine("[" + string.Join (", ", array) + "]");
+return array;
 }
