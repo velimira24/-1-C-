@@ -1,11 +1,10 @@
-﻿int InputNumber2()
+int InputNumber(string text)
  {
  int num1;
-string text;
 
 while(true)
 {
-    Console.Write("Введите число:");
+    Console.Write(text);
      text = Console.ReadLine();
     if(int.TryParse(text,out num1))
    {
