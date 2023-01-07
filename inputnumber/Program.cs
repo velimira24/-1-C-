@@ -15,3 +15,18 @@ while(true)
  }
 return num1;
  }
+
+int[] FillArrayWithRandomNumbers(int size, int leftRange, int rightRange)
+{
+    Random rand = new Random();
+    int [] array = new int[size];
+
+for (int i = 0; i < array.Length; i++)
+{
+    array[i] = rand.Next(leftRange,rightRange+1);
+    
+}
+return array;
+System.Console.WriteLine("[" + string.Join (", ", array) + "]");
+
+}
