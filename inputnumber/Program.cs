@@ -34,3 +34,10 @@ void PrintArray (int[]array)
                   {
                    Console.WriteLine("[" + string.Join (", ", array) + "]");
                   }
+
+
+void func(int num)
+ {
+    if (num / 2!= 0)
+    func(num/2);
+    System.Console.Write(num%2);}
