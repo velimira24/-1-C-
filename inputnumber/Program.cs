@@ -27,6 +27,11 @@ for (int i = 0; i < array.Length; i++)
     
 }
 
-System.Console.WriteLine("[" + string.Join (", ", array) + "]");
+
 return array;
 }
+
+void PrintArray ([int[]arr)
+                  {
+                   Console.WriteLine("[" + string.Join (", ", array) + "]");
+                  }
