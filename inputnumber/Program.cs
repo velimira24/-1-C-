@@ -1,3 +1,5 @@
+Ввод числа:
+
 int InputNumber(string text)
  {
  int num1;
@@ -15,6 +17,7 @@ while(true)
 return num1;
  }
 
+Заполнение массива случайными числами:
 int[] FillArrayWithRandomNumbers(int size, int leftRange, int rightRange)
 {
     Random rand = new Random();
@@ -30,14 +33,19 @@ for (int i = 0; i < array.Length; i++)
 return array;
 }
 
+Напечатать массив:
 void PrintArray (int[]array)
-                  {
-                   Console.WriteLine("[" + string.Join (", ", array) + "]");
-                  }
+  {
+    Console.WriteLine("[" + string.Join (", ", array) + "]");
+  }
 
-
+Пример рекурсии:
 void func(int num)
  {
     if (num / 2!= 0)
     func(num/2);
     System.Console.Write(num%2);}
+
+Копируем массив:
+
+int[] array_copy = arr[];
