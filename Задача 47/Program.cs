@@ -32,3 +32,19 @@ void PrintArray(double[,] array)
         Console.WriteLine("");
     }
 }
+
+Метод заполнения случайными ВЕЩЕСТВЕННЫМИ числами:
+
+// Метод заполнения массива случайными числами: 
+double [,] FillArrayWithRandomNumbers2 (double[,] array)
+{
+Random rand = new Random();
+for (int i = 0; i < array.GetLength(0); i++)
+{
+    for (int j = 0; j < array.GetLength(1); j++)
+    {
+        array[i,j] = Math.Round(rand.Next(0,10) +rand.NextDouble(),2);
+    }
+}
+return array;
+}
